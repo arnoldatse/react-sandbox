@@ -1,0 +1,18 @@
+.auth-page {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 50px);
+  width: 100%;
+}
+.auth-card {
+  width: 450px;
+  padding: 40px;
+  height: fit-content;
+  border-radius: 20px;
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+  -webkit-box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+  -moz-box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+}

@@ -1,3 +1,27 @@
+*{
+  box-sizing: border-box;
+}
+:root{
+  --primaryColor: #b101b4;
+  --primaryContrastColor: #270028;
+  
+  --secondaryStartGradientColor: #b40199;
+  --secondaryEndGradientColor: #0a79ad;
+  --secondaryGradientColor: linear-gradient(130deg, var(--secondaryStartGradientColor) 0%, var(--secondaryEndGradientColor) 80%);
+  
+  --accentStartGradientColor: #5d004f;
+  --accentEndGradientColor: #216759;
+  --accentGradientColor: linear-gradient(130deg, var(--accentStartGradientColor) 0%, var(--accentEndGradientColor) 80%);
+  
+  --inactiveGradientColor: linear-gradient(130deg, #515151 0%, #afafaf 80%);
+  
+  --dangerColor: #f53737;
+  --fieldMargin: 5px;
+  --interactorBorderRadius: 5px;
+
+  --topBarBoxShadow: 2px -3px 20px 1px rgba(104, 104, 104, 0.7)
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +34,89 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.field{
+  margin: calc(var(--fieldMargin) * 2) 0;
+}
+.field label{
+  display: block;
+}
+.field .field-error{
+  color: var(--dangerColor);
+    font-size: 0.8rem;
+}
+.form-control{
+  height: 35px;
+  border: 1px solid #b5b5b5;
+  border-radius: var(--interactorBorderRadius);
+  padding: 5px 10px;
+  margin: var(--fieldMargin) 0;
+}
+.form-control.invalid{
+  border-color: var(--dangerColor);
+}
+.form-control:focus{
+  outline: none;
+  border: 2px solid var(--primaryColor);
+}
+.form-control.invalid:focus{
+  border-color: var(--dangerColor);
+}
+
+.link{
+  position: relative;
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+.link::after{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0px;
+  height: 2px;
+  background-image: var(--secondaryGradientColor);
+  transition: .3s;
+}
+.link:hover::after{
+  width: 100%;
+}
+
+.span-link{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn{
+  cursor: pointer;
+  color: #ffffff;
+  text-decoration: none;
+  background-image: var(--secondaryGradientColor);
+  padding: 10px;
+  border: none;
+  border-radius: var(--interactorBorderRadius);
+}
+.btn:hover{
+  cursor: pointer;
+  color: #d1d1d1;
+  background-image: var(--accentGradientColor);
+  padding: 10px;
+}
+.btn:disabled{
+  cursor: auto;
+  color: #dfdfdf;
+  background-image: var(--inactiveGradientColor);
+}
+
+.full-width{
+  width: 100%;
+}
+
+.form-error-message{
+  margin: 20px 0;
+  padding: 20px;
+  width: 100%;
+  border-radius: var(--interactorBorderRadius);
+  background-color: var(--dangerColor);
+  color: #fff;
 }

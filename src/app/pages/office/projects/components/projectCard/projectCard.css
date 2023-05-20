@@ -1,0 +1,10 @@
+.project-card{
+    width: 100%;
+    padding: 40px;
+    height: fit-content;
+    border-radius: 20px;
+    border: 1px solid #c2c2c2;
+    box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+    -webkit-box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+    -moz-box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+}
