@@ -4,10 +4,11 @@ import Project from "core/office/entities/Project";
 import { v4 as uuidv4 } from "uuid";
 import { SubmitHandler } from "react-hook-form";
 import { useState } from "react";
-import Form, { Inputs } from "./form/form";
+import Form, { Inputs, TypeForm } from "./form/form";
 import { add } from "@app/store/projects/projectsSlice";
 
 const AddForm = () => {
+  const typeForm = TypeForm.add
   const project = new Project(uuidv4(), "", "");
   const [submitionLoading, setSubmitionLoading] = useState(false);
   const [submitionError, setSubmittonError] = useState({
@@ -25,6 +26,7 @@ const AddForm = () => {
 
   return (
     <Form
+    type={typeForm}
       project={project}
       onSubmit={onSubmit}
       submitionLoading={submitionLoading}

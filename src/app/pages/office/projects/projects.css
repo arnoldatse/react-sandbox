@@ -5,11 +5,9 @@
 }
 .projects-container{
     display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 .project-list-container{
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 .projects-list{
     display: flex;
@@ -17,4 +15,7 @@
     align-items: center;
     width: 50%;
     overflow-y: auto;
+}
+.projects-actions{
+    margin-bottom: 30px;
 }

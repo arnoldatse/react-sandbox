@@ -1,6 +1,7 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { useAppDispatch } from "@app/hooks/store";
 import { disconnect } from "@app/store/account/accountSlice";
+import logo from "assets/pictures/logo.png";
 import "./officeLayout.css";
 
 const OfficeLayout = () => {
@@ -13,7 +14,7 @@ const OfficeLayout = () => {
   return (
     <div className="office-page">
       <nav className="office-top-bar">
-        <div className="logo"></div>
+        <div className="logo"><Link to="/"><img src={logo} alt="Logo" width="20px" /></Link></div>
         <ul>
           <li>
             <button className="btn" onClick={logout}>

@@ -11,6 +11,7 @@ export default class LoginService implements SignInRepository {
             login,
             password
         }).then(async (response) => {
+            //throw new Error()
             const userAuthenticated = new UserAuthenticated("SDdFCcSDQCeeeNECEE6fz46efze6f4e84f8zzeizflnSDF", login, true)
             return { echec: false, message: "created with success", user: { token: userAuthenticated.token, username: userAuthenticated.username } }
         }).catch(error=>{

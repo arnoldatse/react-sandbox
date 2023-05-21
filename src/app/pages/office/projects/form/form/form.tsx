@@ -3,31 +3,46 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import Project from "core/office/entities/Project";
 import { Link } from "react-router-dom";
 
+export enum TypeForm{
+  "add",
+  "edit"
+}
+
 export interface Inputs {
   title: string;
   desc: string;
 }
 
-interface propsInterface{
-  project: Project
+interface propsInterface {
+  type: TypeForm
+  project: Project;
   onSubmit: SubmitHandler<Inputs>;
-  submitionLoading: boolean
+  submitionLoading: boolean;
   submitionError: {
-    error: boolean,
-    message: string,
-  }
+    error: boolean;
+    message: string;
+  };
 }
 
-const Form = ({project, onSubmit, submitionLoading, submitionError}: propsInterface,) => {
+const Form = ({
+  type,
+  project,
+  onSubmit,
+  submitionLoading,
+  submitionError,
+}: propsInterface) => {
   const {
     register,
     handleSubmit,
     formState: { errors, isValid },
   } = useForm<Inputs>({
-    defaultValues: {title: project.title, desc: project.desc}
+    defaultValues: { title: project.title, desc: project.desc },
   });
+
+  const submitButtonText = ()=>type === TypeForm.add ? "Add" : "Edit"
+
   return (
-    <div>
+    <div className="form">
       <Link to="../" className="link">
         Annuler
       </Link>
@@ -59,7 +74,7 @@ const Form = ({project, onSubmit, submitionLoading, submitionError}: propsInterf
             type="submit"
             disabled={!isValid || submitionLoading}
           >
-            Add
+            {submitionLoading ? "Loading" : submitButtonText()}
           </button>
         </div>
       </form>

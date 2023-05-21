@@ -13,6 +13,7 @@
   height: var(--top-bar-height);
   background-color: #e4e4e4;
   box-shadow: var(--topBarBoxShadow);
+  z-index: 999;
 }
 .office-top-bar ul{
   display: flex;

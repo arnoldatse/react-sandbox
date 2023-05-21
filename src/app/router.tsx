@@ -12,7 +12,6 @@ import OfficeLayout from "./layouts/office/officeLayout";
 import Login from "./pages/public/auth/login/login";
 
 import { useAppSelector } from "./hooks/store";
-import Profile from "./pages/office/profile/profile";
 import Projects from "./pages/office/projects/projects";
 import AddForm from "./pages/office/projects/form/addForm";
 import EditForm from "./pages/office/projects/form/editForm";
@@ -58,7 +57,6 @@ export default createBrowserRouter(
         }
       >
         <Route path="" element={<Navigate to="/office/projects" replace />} />
-        <Route path="profile" element={<Profile />} />
         <Route path="projects" element={<Projects />} >
           <Route path="add" element={<AddForm/>}/>
           <Route path="edit/:projectId" element={<EditForm/>}/>

@@ -1,16 +1,19 @@
 import { Link } from "react-router-dom";
+import logo from "assets/pictures/logo.png";
 import "./header.css";
 
 const Header = () => {
   return (
     <nav className="public-top-bar">
-    <div className="logo"></div>
+    <div className="logo">
+      <img src={logo} width="20px" alt="" />
+    </div>
       <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/auth">Login</Link>
+          <Link to="/auth">Logging in</Link>
         </li>
       </ul>
     </nav>

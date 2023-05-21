@@ -70,7 +70,7 @@ const Login = () => {
           </div>
           <div className="action">
             <button className="btn full-width" type="submit" disabled={!isValid || submititonLoading}>
-              Connexion
+              { submititonLoading ? 'Loading...' : 'Connexion'}
             </button>
           </div>
         </form>

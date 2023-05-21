@@ -14,7 +14,9 @@ const Projects = () => {
     <div className="projects-page">
       <div className="projects-container">
         <div className="project-list-container">
+          <div className="projects-actions">
           <Link to="add" className="btn">Add New</Link>
+          </div>
           <div className="projects-list-container">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />

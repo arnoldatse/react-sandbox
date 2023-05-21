@@ -1,10 +1,49 @@
-.project-card{
-    width: 100%;
-    padding: 40px;
-    height: fit-content;
-    border-radius: 20px;
-    border: 1px solid #c2c2c2;
-    box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
-    -webkit-box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
-    -moz-box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+.project-card {
+  margin: 20px 0;
+  width: 400px;
+  height: fit-content;
+  border-radius: 20px;
+  border: 1px solid #c2c2c2;
+  box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+  -webkit-box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+  -moz-box-shadow: 1px 0px 12px 0px rgba(143, 143, 143, 0.75);
+}
+.project-card .head {
+  padding: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #cdc8c8;
+}
+.project-card .head .title {
+  font-family: Montserrat-Bold;
+  margin-bottom: 10px;
+}
+.action-card {
+  font-size: 0.8rem;
+}
+.actions span {
+  margin-left: 10px;
+}
+.project-card .content .desc {
+  max-height: 0;
+  overflow-y: auto;
+  transition: max-height 1s;
+}
+.project-card .content .show.desc {
+  max-height: 500px;
+}
+.project-card .content .desc .content {
+  margin: 10px;
+}
+.project-card .bottom {
+  display: flex;
+  justify-content: center;
+}
+.project-card .bottom span {
+  cursor: pointer;
+  font-size: 2rem;
+  transform: rotate(-90deg);
+  transition: transform 1s 0.3s;
+}
+.project-card .bottom span.down {
+  transform: rotate(90deg);
 }
