@@ -13,7 +13,7 @@ const Home = () => {
           </p>
           <p>
             To further test this app, I invite you to access the fake
-            authentication page for.
+            authentication page for{" "}
             <Link className="link white inline-link" to="/auth">
               {" "}
               Logging In.

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import {
   createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Navigate,
   Route,
@@ -31,7 +32,7 @@ export function ProtectedGuestRoute({ children }: Props) {
   return <>{unauthenticated ? children : <Navigate to="/office/projects" replace />}</>;
 }
 
-export default createBrowserRouter(
+export default createHashRouter(
   createRoutesFromElements(
     <Route path="/">
       <Route path="" element={<DefaultLayout />}>
