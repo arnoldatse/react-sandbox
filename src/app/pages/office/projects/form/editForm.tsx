@@ -1,11 +1,11 @@
-import { useAppDispatch, useAppSelector } from "@app/hooks/store";
+import { useAppDispatch, useAppSelector } from "app/hooks/store";
 import { useNavigate, useParams } from "react-router-dom";
 import Project from "core/office/entities/Project";
 import { SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import Form, { Inputs, TypeForm } from "./form/form";
-import { edit } from "@app/store/projects/projectsSlice";
-import { findOneProjectSelector } from "@app/store/projects/projectSelector";
+import { edit } from "app/store/projects/projectsSlice";
+import { findOneProjectSelector } from "app/store/projects/projectSelector";
 
 const EditForm = () => {
   const typeForm = TypeForm.edit

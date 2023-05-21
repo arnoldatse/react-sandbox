@@ -1,10 +1,9 @@
 {
   "name": "react-sandbox",
   "version": "0.1.0",
-  "homepage": "https://arnoldatse.github.io/react-sandbox",
+  "homepage": "https://arnoldatse.github.io",
   "private": true,
   "dependencies": {
-    "@craco/craco": "^7.1.0",
     "@reduxjs/toolkit": "^1.9.5",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -31,11 +30,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "craco-start": "craco start",
-    "craco-build": "craco build",
-    "craco-test": "craco test",
-    "craco-eject": "craco eject",
-    "predeploy": "craco build",
+    "predeploy": "npm run build",
     "gh-pages-deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",

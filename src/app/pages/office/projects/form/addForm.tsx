@@ -1,11 +1,11 @@
-import { useAppDispatch } from "@app/hooks/store";
+import { useAppDispatch } from "app/hooks/store";
 import { useNavigate } from "react-router-dom";
 import Project from "core/office/entities/Project";
 import { v4 as uuidv4 } from "uuid";
 import { SubmitHandler } from "react-hook-form";
 import { useState } from "react";
 import Form, { Inputs, TypeForm } from "./form/form";
-import { add } from "@app/store/projects/projectsSlice";
+import { add } from "app/store/projects/projectsSlice";
 
 const AddForm = () => {
   const typeForm = TypeForm.add

@@ -1,6 +1,6 @@
 import "./projects.css";
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { useAppSelector } from "@app/hooks/store";
+import { useAppSelector } from "app/hooks/store";
 import Project from "core/office/entities/Project";
 import ProjectCard from "./components/projectCard/projectCard";
 

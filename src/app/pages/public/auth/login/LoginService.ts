@@ -1,4 +1,4 @@
-import HttpRequestService from "@app/services/httpService/HttpRequestService";
+import HttpRequestService from "app/services/httpService/HttpRequestService";
 import UserAuthenticated from "core/auth/entities/UserAuthenticated";
 import SignInRepository, { SignInResponse } from "core/auth/repositories/SignInRepository";
 import HttpRequestRepository from "core/repositories/HttpRequestRepository";

@@ -1,8 +1,8 @@
 import "./projectCard.css";
 import { Link } from "react-router-dom";
 import Project from "core/office/entities/Project";
-import { useAppDispatch } from "@app/hooks/store";
-import { remove } from "@app/store/projects/projectsSlice";
+import { useAppDispatch } from "app/hooks/store";
+import { remove } from "app/store/projects/projectsSlice";
 import { useState } from "react";
 
 const ProjectCard = ({ project }: { project: Project }) => {

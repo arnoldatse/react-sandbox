@@ -1,6 +1,6 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
-import { useAppDispatch } from "@app/hooks/store";
-import { disconnect } from "@app/store/account/accountSlice";
+import { useAppDispatch } from "app/hooks/store";
+import { disconnect } from "app/store/account/accountSlice";
 import logo from "assets/pictures/logo.png";
 import "./officeLayout.css";
 

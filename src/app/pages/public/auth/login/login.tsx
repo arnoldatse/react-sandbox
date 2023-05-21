@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAppDispatch } from "@app/hooks/store";
-import { authenticate } from "@app/store/account/accountSlice";
+import { useAppDispatch } from "app/hooks/store";
+import { authenticate } from "app/store/account/accountSlice";
 import LoginService from "./LoginService";
 import "./login.css";
 import { SubmitHandler, useForm } from "react-hook-form";
