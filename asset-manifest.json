@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-sandbox/static/css/main.a9263fc9.css",
-    "main.js": "/react-sandbox/static/js/main.f66b415c.js",
-    "static/js/787.60ffb363.chunk.js": "/react-sandbox/static/js/787.60ffb363.chunk.js",
-    "static/media/profile.jpg": "/react-sandbox/static/media/profile.84dbfaffb41c8c759db3.jpg",
-    "static/media/Montserrat-ExtraBold.ttf": "/react-sandbox/static/media/Montserrat-ExtraBold.fdfc24b8a9e4e17fe907.ttf",
-    "static/media/Montserrat-Bold.ttf": "/react-sandbox/static/media/Montserrat-Bold.d0ca82d8ca07ba209aee.ttf",
-    "static/media/Montserrat-Light.ttf": "/react-sandbox/static/media/Montserrat-Light.dfb04f69b77b88e22558.ttf",
-    "static/media/Montserrat-Regular.ttf": "/react-sandbox/static/media/Montserrat-Regular.94bb495fba6077f669ed.ttf",
-    "static/media/Montserrat-ExtraLight.ttf": "/react-sandbox/static/media/Montserrat-ExtraLight.41d61b3f1d94d1d526d8.ttf",
-    "static/media/logo.png": "/react-sandbox/static/media/logo.a6de9b2f46b864c8f93d.png",
-    "index.html": "/react-sandbox/index.html",
-    "main.a9263fc9.css.map": "/react-sandbox/static/css/main.a9263fc9.css.map",
-    "main.f66b415c.js.map": "/react-sandbox/static/js/main.f66b415c.js.map",
-    "787.60ffb363.chunk.js.map": "/react-sandbox/static/js/787.60ffb363.chunk.js.map"
+    "main.css": "/static/css/main.338ca71f.css",
+    "main.js": "/static/js/main.cbc83c3c.js",
+    "static/js/787.60ffb363.chunk.js": "/static/js/787.60ffb363.chunk.js",
+    "static/media/profile.jpg": "/static/media/profile.84dbfaffb41c8c759db3.jpg",
+    "static/media/Montserrat-ExtraBold.ttf": "/static/media/Montserrat-ExtraBold.fdfc24b8a9e4e17fe907.ttf",
+    "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.d0ca82d8ca07ba209aee.ttf",
+    "static/media/Montserrat-Light.ttf": "/static/media/Montserrat-Light.dfb04f69b77b88e22558.ttf",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.94bb495fba6077f669ed.ttf",
+    "static/media/Montserrat-ExtraLight.ttf": "/static/media/Montserrat-ExtraLight.41d61b3f1d94d1d526d8.ttf",
+    "static/media/logo.png": "/static/media/logo.a6de9b2f46b864c8f93d.png",
+    "index.html": "/index.html",
+    "main.338ca71f.css.map": "/static/css/main.338ca71f.css.map",
+    "main.cbc83c3c.js.map": "/static/js/main.cbc83c3c.js.map",
+    "787.60ffb363.chunk.js.map": "/static/js/787.60ffb363.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9263fc9.css",
-    "static/js/main.f66b415c.js"
+    "static/css/main.338ca71f.css",
+    "static/js/main.cbc83c3c.js"
   ]
 }
