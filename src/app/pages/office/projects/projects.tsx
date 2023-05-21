@@ -5,7 +5,12 @@ import Project from "core/office/entities/Project";
 import ProjectCard from "./components/projectCard/projectCard";
 
 const Projects = () => {
-  const {pathname} = useLocation()
+  const { pathname } = useLocation();
+  const path = pathname.split("/");
+  const projectListContainerClasses =
+    path[2] === "projects" && path.length > 3 && path[3] !== ""
+      ? "project-list-container sub-projects-path"
+      : "project-list-container";
 
   const projects: Project[] = useAppSelector(
     (state) => state.projects.projects
@@ -13,9 +18,11 @@ const Projects = () => {
   return (
     <div className="projects-page">
       <div className="projects-container">
-        <div className="project-list-container">
+        <div className={projectListContainerClasses}>
           <div className="projects-actions">
-          <Link to="add" className="btn">Add New</Link>
+            <Link to="add" className="btn">
+              Add New
+            </Link>
           </div>
           <div className="projects-list-container">
             {projects.map((project) => (
@@ -23,7 +30,9 @@ const Projects = () => {
             ))}
           </div>
         </div>
-        <Outlet key={pathname} />
+        <div className="sub-projects-path-container">
+          <Outlet key={pathname} />
+        </div>
       </div>
     </div>
   );

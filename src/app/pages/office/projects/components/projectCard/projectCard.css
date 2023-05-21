@@ -47,3 +47,8 @@
 .project-card .bottom span.down {
   transform: rotate(90deg);
 }
+@media screen and (max-width: 800px) {
+  .project-card{
+    width: 100%;
+  }
+}

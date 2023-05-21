@@ -1,3 +1,9 @@
+# REACT PROJECT SANDBOX
+This Project have been created as an exemple to provide an React JS starter project for experimentals and experiences purpose.
+This project use `React Redux`, `React Router` and `React Hook Form`
+# DEMO
+You can test this app here [https://arnoldatse.github.io/react-sandbox](https://arnoldatse.github.io/react-sandbox)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
