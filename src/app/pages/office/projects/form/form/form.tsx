@@ -39,12 +39,12 @@ const Form = ({
     defaultValues: { title: project.title, desc: project.desc },
   });
 
-  const submitButtonText = ()=>type === TypeForm.add ? "Add" : "Edit"
+  const submitButtonText = ()=>type === TypeForm.add ? "Create" : "Update"
 
   return (
     <div className="form">
       <Link to="../" className="link">
-        Annuler
+        Cancel
       </Link>
       <form className="project-form" onSubmit={handleSubmit(onSubmit)}>
         {submitionError.error && (
